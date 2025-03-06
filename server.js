@@ -6,7 +6,8 @@ const { OpenAI } = require('openai');
 dotenv.config();
 
 const app = express();
-const port = 4000;  // Using the port variable instead of hardcoding
+const port = process.env.PORT || 4000;  // Use Render's port or default to 4000
+
 
 // Middlewares
 app.use(cors());
