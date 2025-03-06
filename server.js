@@ -6,7 +6,7 @@ const { OpenAI } = require('openai');
 dotenv.config();
 
 const app = express();
-const port = 4000;
+const port = 4000;  // Using the port variable instead of hardcoding
 
 // Middlewares
 app.use(cors());
@@ -15,6 +15,11 @@ app.use(express.json());
 // Initialize OpenAI client
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY
+});
+
+// A simple GET route for the root path
+app.get('/', (req, res) => {
+    res.send("Server is running. Use the /chat endpoint for POST requests.");
 });
 
 app.post('/chat', async (req, res) => {
@@ -38,6 +43,7 @@ app.post('/chat', async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log('Server running at http://localhost:3000');
+// Use the port variable here
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
 });
