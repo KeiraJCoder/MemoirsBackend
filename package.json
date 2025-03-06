@@ -1,0 +1,27 @@
+{
+  "name": "memoirsbackend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "��#\u0000 \u0000M\u0000e\u0000m\u0000o\u0000i\u0000r\u0000s\u0000B\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000\r\u0000 \u0000",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.86.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeiraJCoder/MemoirsBackend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KeiraJCoder/MemoirsBackend/issues"
+  },
+  "homepage": "https://github.com/KeiraJCoder/MemoirsBackend#readme"
+}
